@@ -1,5 +1,6 @@
-fetch("./data.json").then((response) => {
-    const links = response.json();
+fetch("https://alexcostagit.github.io/links/data.json").then((response) => response.json()).then((links) => {
+
+    console.log(links)
 
     const linkContainer = document.getElementById("link-container");
     for(var index = 0; index < links.length; index++)
